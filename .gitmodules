@@ -1,0 +1,9 @@
+[submodule "flatarrow"]
+	path = flatarrow
+	url = https://github.com/pbower/flatarrow
+[submodule "minarrow"]
+	path = minarrow
+	url = https://github.com/pbower/minarrow
+[submodule "lightstream"]
+	url = https://github.com/pbower/lightstream
+	path = lightstream

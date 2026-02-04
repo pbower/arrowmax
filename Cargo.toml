@@ -1,0 +1,32 @@
+[package]
+name = "arrowmax"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["Peter Garfield Bower"]
+description = "High-performance Arrow data stack: columnar storage, zero-copy streaming, and schema codegen"
+keywords = ["arrow", "apache-arrow", "streaming", "simd", "columnar"]
+categories = ["data-structures", "encoding", "asynchronous"]
+
+[dependencies]
+minarrow = { workspace = true }
+lightstream = { workspace = true }
+flatarrow = { workspace = true, optional = true }
+
+[features]
+default = []
+flatarrow = ["dep:flatarrow"]
+
+[workspace]
+resolver = "2"
+
+members = [
+    "minarrow",
+    "lightstream",
+    "flatarrow",
+]
+
+[workspace.dependencies]
+minarrow = { version = "0.7.2", path = "minarrow", default-features = false }
+lightstream = { version = "0.3.0", path = "lightstream", default-features = false }
+flatarrow = { version = "0.1.0", path = "flatarrow", default-features = false }
