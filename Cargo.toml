@@ -5,7 +5,7 @@ edition = "2024"
 license = "MIT"
 authors = ["Peter Garfield Bower"]
 description = "High-performance Arrow data stack: columnar storage, zero-copy streaming, and schema codegen"
-keywords = ["arrow", "apache-arrow", "streaming", "simd", "columnar"]
+keywords = ["arrow", "apache-arrow", "streaming", "simd", "data"]
 categories = ["data-structures", "encoding", "asynchronous"]
 
 [dependencies]
